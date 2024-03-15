@@ -1,4 +1,4 @@
-"""
+
 # Q. How to install custom python pip packages?
 
 # A. Uncomment the below code to install the custom python packages.
@@ -13,7 +13,7 @@ def install(package):
 
     # Args:
     #     package ([str]): Package name with version
-    
+
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 
@@ -22,7 +22,7 @@ def install_local_package(folder_name):
 
     # Args:
     #     folder_name ([str]): name of the folder placed in evaluation_script/
-    
+
     subprocess.check_output(
     [
         sys.executable,
@@ -33,11 +33,15 @@ def install_local_package(folder_name):
     ]
 )
 
-install("shapely==1.7.1")
-install("requests==2.25.1")
+install("scipy==1.10.0")
+install("nltk==3.7")
+install("numpy==1.23.5")
 
-install_local_package("package_folder_name")
+# install("shapely==1.7.1")
+# install("requests==2.25.1")
+#
+# install_local_package("package_folder_name")
 
-"""
+
 
 from .main import evaluate
