@@ -19,8 +19,8 @@ leaderboard:
   - id: 1
     schema:
       {
-        "labels": ["Label accuracy"],
-        "default_order_by": "Label accuracy",
+        "labels": ["Label accuracy", "Evidence score", "Averitec score1", "Averitec score2", "Averitec score3"],
+        "default_order_by": "Averitec score1",
       }
 
 challenge_phases:
