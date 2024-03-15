@@ -37,6 +37,11 @@ install("scipy")
 install("nltk")
 install("numpy")
 
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+
+
 # install("scipy==1.10.0")
 # install("nltk==3.7")
 # install("numpy==1.23.5")
